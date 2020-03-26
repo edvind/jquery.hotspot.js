@@ -22,8 +22,8 @@
 			yPos = yPos / imageHeight * bannerHeight;
 
 			$(this).css({
-				'top': yPos,
-				'left': xPos,
+				'top': yPos - ($(this).height() / 2),
+				'left': xPos - ($(this).width() / 2),
 				'display': 'block',
 			});
 			$(this).children(options.tooltipselector).css({
